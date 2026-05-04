@@ -1,65 +1,83 @@
-# AI Resume Analyzer
+# 📄 AI Resume Analyzer using NLP
 
-## Overview
-This project analyzes resumes against job descriptions using NLP techniques.
+🚀 An intelligent web application that analyzes resumes against job descriptions using Natural Language Processing techniques.
 
-## Features
-- Upload resume (PDF)
-- Paste job description
-- Get match score
-- Identify missing keywords
-- Get improvement suggestions
+---
 
-## Tech Stack
-- Python
-- Streamlit
-- Scikit-learn
-- NLP
+## 🔍 Features
 
-## How to Run
+- 📄 Upload Resume (PDF)
+- 📝 Paste Job Description
+- 📊 Get Match Score (0–100%)
+- 🔑 Identify Missing Keywords
+- 💡 Get Resume Improvement Suggestions
+
+---
+
+## 🧠 Tech Stack
+
+- **Python**
+- **Streamlit**
+- **Scikit-learn**
+- **NLP (TF-IDF + Cosine Similarity)**
+
+---
+
+## ⚙️ How It Works
+
+1. Resume is parsed from PDF
+2. Text is preprocessed
+3. TF-IDF converts text into vectors
+4. Cosine similarity computes match score
+5. Missing keywords are extracted
+
+---
+
+## 📸 Demo
+
+### 🖥️ Application UI
+(Add screenshot here)
+
+---
+
+## ▶️ Run Locally
 
 ```bash
+git clone https://github.com/your-username/AI-Resume-Analyzer.git
+cd AI-Resume-Analyzer
 pip install -r requirements.txt
 python3 -m streamlit run app.py
 
+
+
+📁 Project Structure
 AI-Resume-Analyzer/
 │── app.py
-│── src/
-│   ├── parser.py
-│   ├── matcher.py
-│   ├── llm_engine.py
+│── requirements.txt
+│── README.md
+│── .gitignore
+│
+└── src/
+    ├── parser.py
+    ├── matcher.py
+    ├── llm_engine.py
 
 
 
+⚠️ Limitations
+Keyword-based matching
+Limited semantic understanding
+Sensitive to wording differences
+🚀 Future Improvements
+Integration with BERT / LLMs
+Semantic similarity detection
+Deploy as a web application
+👨‍💻 Author
 
----
+Aman Chaudhary
+B.Sc. Data Science & AI
+IIT Guwahati
 
-# 🚀 FINAL CHECKLIST
 
-Before submission:
 
-✔ App running  
-✔ GitHub uploaded  
-✔ PPT ready  
-✔ Report compiled  
-✔ Video recorded  
-
----
-
-# 🏆 FINAL ADVICE
-
-When presenting:
-- Speak confidently  
-- Explain logic clearly  
-- Don’t rush  
-
-👉 You’ve built a **complete end-to-end project**
-
----
-
-If you want last polish:
-👉 “make my PPT visually premium”  
-👉 “give viva questions”  
-
-I’ll push it to **top-tier level** 🔥
 
